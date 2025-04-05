@@ -1,0 +1,18 @@
+@model BuscaCepApp.Models.CepModel
+
+<div class="container">
+    <h2>Resultado para @Model.Cep</h2>
+
+    <div class="resultado">
+        <ul>
+            <li><strong>Logradouro:</strong> <span>@Model.Logradouro</span></li>
+            <li><strong>Complemento:</strong> <span>@Model.Complemento</span></li>
+            <li><strong>Bairro:</strong> <span>@Model.Bairro</span></li>
+            <li><strong>Cidade:</strong> <span>@Model.Localidade</span></li>
+            <li><strong>Estado:</strong> <span>@Model.Uf</span></li>
+            <li><strong>DDD:</strong> <span>@Model.Ddd</span></li>
+        </ul>
+    </div>
+
+    <a href="/" class="btn">Fazer nova busca</a>
+</div>

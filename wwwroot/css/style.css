@@ -1,0 +1,128 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+/* Container principal */
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+}
+
+/* Título */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input */
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+    input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    }
+
+/* Botão */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 600;
+}
+
+    button:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+    }
+
+/* Resultado da busca */
+.resultado {
+    margin-top: 15px;
+}
+
+    .resultado ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resultado li {
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ddd;
+    }
+
+/* Botão de nova busca */
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+    .btn:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+    }
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
